@@ -12,12 +12,13 @@ Given "pwwkew", the answer is "wke", with the length of 3.
 Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 """
 
+""""
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+        
+        #:type s: str
+        #:rtype: int
+        
 
         length = 0
         max_length = []
@@ -37,7 +38,24 @@ class Solution(object):
         if not max_length or len(substring) > max(max_length):
             return len(substring)
         return max(max_length)
+"""
 
+
+class Solution:
+    # @return an integer
+    def lengthOfLongestSubstring(self, s):
+        start = maxLength = 0
+        usedChar = {}
+
+        for i in range(len(s)):
+            if s[i] in usedChar and start <= usedChar[s[i]]:
+                start = usedChar[s[i]] + 1
+            else:
+                maxLength = max(maxLength, i - start + 1)
+
+            usedChar[s[i]] = i
+
+        return maxLength
 
 string1 = "abcabcbb"
 string2 = "bbbbb"
