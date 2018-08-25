@@ -1,6 +1,6 @@
 import re
 
-pattern = re.compile(r"abc\sxyz")
+pattern = re.compile(r"abc\ssdxyz")
 
 # If zero or more characters at the beginning of string match the regular expression pattern,
 # return a corresponding MatchObject instance.

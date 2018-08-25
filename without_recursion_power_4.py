@@ -31,3 +31,8 @@ print math.log(4, 10)
 print math.log(4194304, 10)/math.log(4, 10)
 print int(math.log(4194304, 10)/math.log(4, 10))
 print math.log(4194304, 10)/math.log(4, 10) == int(math.log(4194304, 10)/math.log(4, 10))
+print math.log(4194304, 2)/math.log(4, 2) == int(math.log(4194304, 2)/math.log(4, 2))
+print math.log(4194304, 2)/math.log(4, 2)
+print int(math.log(4194304, 2)/math.log(4, 2))
+print (11.0 == 11)
+

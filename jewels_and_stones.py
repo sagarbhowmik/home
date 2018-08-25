@@ -34,9 +34,14 @@ class Solution(object):
         if len(S) > 50:
             return "Maximum length is 50"
         number_jewel = 0
-        for each in S:
-            if each in J:
-                number_jewel += 1
+        # for each in S:
+        #     if each in J:
+        #         number_jewel += 1
+        # return number_jewel
+        for jewel in J:
+            for stone in S:
+                if stone == jewel:
+                    number_jewel += 1
         return number_jewel
 
 

@@ -31,8 +31,12 @@ class WordDictionary(object):
         """
         current = self.word_dictionary
         for char in word:
-            if char not in current and char is not '.':
+            if char not in current and char != '.':
                 return False
+            elif char == '.':
+                for each k in current.keys():
+
+
             current = current[char]
         if "end" in current:
             return True
