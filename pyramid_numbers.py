@@ -29,4 +29,4 @@ def sum_pyramid_numbers(row):
     print sum
 
 
-sum_pyramid_numbers(100)
+sum_pyramid_numbers(5)

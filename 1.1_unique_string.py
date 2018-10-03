@@ -1,4 +1,7 @@
 def uniqueString(input):
+    print len(input)
+    for each in input:
+        print each
     string_set = set()
     for each_char in input:
         if each_char not in string_set:
@@ -7,4 +10,4 @@ def uniqueString(input):
             return False
     return True
 
-print uniqueString("catt")
+print uniqueString("dfdfd")

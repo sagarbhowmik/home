@@ -5,4 +5,4 @@ def isPermutation(string1, string2):
         return False
 
 
-print isPermutation("oola", "loao")
+print isPermutation("god ", "dog")
